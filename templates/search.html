@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Кандидаты найденные по имени</title>
+</head>
+<body>
+<h1>Hайдено кандидатов: {{count_candidates}} </h1>
+{% for can in candidates %}
+    <p><a href="/search/{{ can.name }}">{{can.name}}</a> </p>
+
+{% endfor %}
+
+</body>
+</html>
